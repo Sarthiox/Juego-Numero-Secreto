@@ -58,7 +58,7 @@ function generarNumeroSecreto() {
     let numeroGenerado= Math.floor(Math.random()*numeroMaximo)+1;
     //si ya sorteamos todos los numeros
 
-    if (listaNumerosSorteados.length() == numeroMaximo) {
+    if (listaNumerosSorteados.length == numeroMaximo) {
         asignarTextoElemento("p", 'Ya se sorteo todos los numeros posibles dentro del rango');
     } else {
 
@@ -85,3 +85,4 @@ function condicionesIniciales(){
 }
 
 condicionesIniciales();
+
